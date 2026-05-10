@@ -38,18 +38,18 @@ hist_values = np.histogram(
 st.bar_chart(hist_values)
 #hist_values
 
-''' plotly แทน
-import plotly.express as px
-import numpy as np
+#''' plotly แทน
+#import plotly.express as px
+#import numpy as np
 
-fig = px.histogram(
-    x=np.histogram(data[DATE_COLUMN].dt.hour,
-                   bins=24,range=(0, 24))[1][0:24],
+#fig = px.histogram(
+#    x=np.histogram(data[DATE_COLUMN].dt.hour,
+#                   bins=24,range=(0, 24))[1][0:24],
     
-    y=hist_values,nbins=24)
+#    y=hist_values,nbins=24)
 
-st.plotly_chart(fig)
-'''
+#st.plotly_chart(fig)
+#'''
 
 #st.subheader('Map of all pickups')
 #st.map(data)
